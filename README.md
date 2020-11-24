@@ -1,83 +1,88 @@
-# Awesome Bevy
+# Incrível Bevy
 
-An [awesome](https://github.com/sindresorhus/awesome)-style list of cool Bevy projects. If you would like to share what you're working on, submit a PR! Feel free to create new categories where it makes sense.
+Uma lista [incrível](https://github.com/sindresorhus/awesome) de projetos interessantes de Bevy. Se você gostaria de compartilhar o que está fazendo, envie um PR! Sinta-se à vontade para criar novas categorias onde fizer sentido.
 
-## Learning
+## Aprendendo
 
-* [Official Bevy Examples](https://github.com/bevyengine/bevy/tree/master/examples): Learn each Bevy feature from minimal illustrative examples
-* [Bevy Cheatsheet](https://github.com/jamadazi/bevy-cheatsheet): Concise programming reference for Bevy!
-* [Bevy Cookbook](https://github.com/jamadazi/bevy-cookbook): Concise recipes for common game dev tasks
-* [Making a Snake Clone](https://mbuffett.com/posts/bevy-snake-tutorial/): Walkthrough on how to make a snake clone
-* [Making Chess Clone in 3D](https://caballerocoll.com/blog/bevy-chess-tutorial): Walkthrough on how to make a Chess Clone with 3D pieces
+* [Exemplos Oficiais de Bevy](https://github.com/bevyengine/bevy/tree/master/examples): Aprenda cada recurso do Bevy com o mínimo de exemplos ilustrativos.
+* [Folha de Dicas](https://github.com/jamadazi/bevy-cheatsheet): Referência de programação concisa para Bevy!
+* [Livro de Métodos](https://github.com/jamadazi/bevy-cookbook): Métodos concisos para tarefas comuns de desenvolvimento de jogos.
+* [Criando um clone de Snake](https://mbuffett.com/posts/bevy-snake-tutorial/): Passo a passo de como fazer um clone de Snake.
+* [Criando um clone de Xadrez em 3D](https://caballerocoll.com/blog/bevy-chess-tutorial): Passo a passo de como fazer um clone de Xadrez com peças 3D.
 
-## Plugins and Crates
-### Input
-* [Kurinji](https://crates.io/crates/kurinji): Input Map for bevy. Converts user input from different input hardware into game specific actions, eg. keyboard "Space" or joystick "A" can be mapped to "Jump" Action.  This allows decoupling of the game code from device specific input api.
+## Plugins e Crates
+### Entrada (Input)
+
+* [Kurinji](https://crates.io/crates/kurinji): Um plugin para mapear a entrada de hardware. Converte as diferentes entradas do hardware do usuário em ações específicas do jogo, por exemplo. O teclado "Espaço" ou o joystick "A" podem ser mapeados para a ação "Saltar". Isso permite o desacoplamento do código do jogo da API de entrada específica do dispositivo.
 
 ### 3D
-* [bevy_fly_camera](https://crates.io/crates/bevy_fly_camera): A flying camera plugin
-* [Bevy-WoW](https://github.com/Tezza48/Bevy-WoW): A WoW-style camera
-* [bevy_obj](https://github.com/AmionSky/bevy_obj): Wavefront .obj mesh asset loader plugin
-* [bevy_mod_picking](https://github.com/aevyrie/bevy_mod_picking): 3d cursor picking and highlighting
+
+* [bevy_fly_camera](https://crates.io/crates/bevy_fly_camera): Um plugin para criar uma câmera voadora básica.
+* [Bevy-WoW](https://github.com/Tezza48/Bevy-WoW): Um projeto de câmera com o estilo de World of Warcraft.
+* [bevy_obj](https://github.com/AmionSky/bevy_obj): Um plugin para carregar ativos com malha do tipo Wavefront (.obj).
+* [bevy_mod_picking](https://github.com/aevyrie/bevy_mod_picking): Um plugin para seleção de mouse, facilitando a interação com geometria usando seu mouse ou qualquer outra fonte de fundição de raios.
 
 ### 2D
 
-* [bevy_tiled](https://github.com/stararawn/bevy_tiled): A plugin for rendering Tiled maps
-* [bevy_prototype_lyon](https://github.com/Nilirad/bevy_prototype_lyon): Draw 2D shapes, like triangles, circles, and beziers.
-* [bevy_tilemap](https://github.com/joshuajbouw/bevy_tilemap): A plugin with generic types for rendering multi-threaded chunk-based tile maps.
-* [bevy_prototype_parallax](https://github.com/btrepp/bevy-prototype-parallax): A parallax scrolling background plugin.
+* [bevy_tiled](https://github.com/stararawn/bevy_tiled): Um plugin para renderizar mapas do editor Tiled.
+* [bevy_prototype_lyon](https://github.com/Nilirad/bevy_prototype_lyon): Um projeto protótipa para desenhar formas e caminhos 2D, como triângulos, círculos, retângulos, linhas, arcos e beziers.
+* [bevy_tilemap](https://github.com/joshuajbouw/bevy_tilemap): Um plugin que permite a renderização de pedaços para mapas baseados em telhas.
+* [bevy_prototype_parallax](https://github.com/btrepp/bevy-prototype-parallax): Um plugin protótipo para gerar fundos com rolagem estilo parallax.
 
-### Animation
+### Animação (Animation)
 
-* [bevy_easings](https://crates.io/crates/bevy_easings): A plugin for easing a component value to another value, mainly used to animate transition between two transforms, but usable for other components.
+* [bevy_easings](https://crates.io/crates/bevy_easings): Um plugin para atenuar o valor de um componente para outro valor, usado principalmente para animar a transição entre duas transformações, mas pode ser usado para outros componentes.
 
 ### UI
 
-* [bevy_ninepatch](https://crates.io/crates/bevy_ninepatch): Display 9-Patch UI elements, where you can specify how different parts of a PNG should grow
+* [bevy_ninepatch](https://crates.io/crates/bevy_ninepatch): Um plugin que exibi elementos de interface de 9 patch, podendo especificar como as diferentes partes de um PNG devem crescer.
 
 ### Backends
 
-* [prototype_bevy_sdl2](https://github.com/aclysma/prototype_bevy_sdl2): A prototype for SDL2 integration into Bevy
-* [bevy_miniquad](https://github.com/smokku/bevy_miniquad): A plugin replacing winit windowing and render pipeline with [miniquad](https://github.com/not-fl3/miniquad) library.
-* [bevy_doryen](https://github.com/smokku/bevy_doryen): A plugin integrating Bevy ECS with [doryen-rs](https://github.com/jice-nospam/doryen-rs) Ascii roguelike library.
-* [bevy_webgl2](https://github.com/mrk-its/bevy_webgl2): WebGL2 renderer plugin for WASM target
+* [prototype_bevy_sdl2](https://github.com/aclysma/prototype_bevy_sdl2): Um protótipo para integração SDL2.
+* [bevy_miniquad](https://github.com/smokku/bevy_miniquad): Um plugin que substitui os plugins de janela padrão e renderização por um baseado em [miniquad](https://github.com/not-fl3/miniquad).
+* [bevy_doryen](https://github.com/smokku/bevy_doryen): Um plugin que integra Bevy ECS com a biblioteca Ascii roguelike ([doryen-rs](https://github.com/jice-nospam/doryen-rs)) com apoio nativo e WASM.
+* [bevy_webgl2](https://github.com/mrk-its/bevy_webgl2): Um plugin backend de renderização WebGL2 com alvo o WASM.
 
-### Physics
+### Física (Physics)
 
-* [bevy_rapier](https://github.com/dimforge/bevy_rapier): A plugin for Rapier, a 2D and 3D physics engine. Maintained by the Rapier developers.
-* [physme](https://github.com/walterpie/physme): A simplistic physics engine for both 2D and 3D simulation. Physically inaccurate, but feels satisfying and is easy to use.
+* [bevy_rapier](https://github.com/dimforge/bevy_rapier): Um plugin de física 2D e 3D. Mantido pelos desenvolvedores do Rapier.
+* [physme](https://github.com/walterpie/physme): Um projeto de física simplista para simulação 2D e 3D. Fisicamente impreciso de acordo com a mecânica newtoniana, mas satisfatório e fácil de usar.
 
 ### Networking
 
-* [bevy_prototype_laminar_networking](https://github.com/ncallaway/bevy-prototype-laminar-networking): A prototype networking plugin using `laminar` as the transport.
-* [bevy_prototype_simple_net](https://github.com/0x22fe/bevy_prototype_simple_net): A working prototype networking plugin that can create client/server systems over TCP or UDP.
-* [bevy_networking_turbulence](https://github.com/smokku/bevy_networking_turbulence): Networking plugin running on [naia-socket](https://github.com/naia-rs/naia-socket) and [turbulence](https://github.com/kyren/turbulence) libraries.
+* [bevy_prototype_laminar_networking](https://github.com/ncallaway/bevy-prototype-laminar-networking): Um plugin protótipo de rede usando `laminar` como meio de transporte, adiciona opções simples de confiabilidade, pedidos e conexão virtual em cima do soquete UDP.
+* [bevy_prototype_simple_net](https://github.com/0x22fe/bevy_prototype_simple_net): Um plugin protótipo de rede que pode criar sistemas cliente/servidor sobre TCP ou UDP.
+* [bevy_networking_turbulence](https://github.com/smokku/bevy_networking_turbulence): Um plugin de rede usando [naia-socket](https://github.com/naia-rs/naia-socket) e [turbulence](https://github.com/kyren/turbulence). Permite a troca de mensagens brutas e pacotes nativos Linux/Windows (UDP/UDP) e também no navegador/WASM (UDP/WebRTC).
 
-### Development tools
-* [bevy-contrib-inspector](https://github.com/jakobhellermann/bevy-contrib-inspector): Visually edit fields of your bevy resources in a browser or native view.
+### Ferramentas de Desenvolvimento (Development Tools)
 
-### Helpers
-* [bevy_contrib_colors](https://crates.io/crates/bevy_contrib_colors): A simple color library.
-* [bevy_prototype_inline_assets](https://crates.io/crates/bevy_prototype_inline_assets): A simple plugin for bundling assets into your binary.
+* [bevy-contrib-inspector](https://github.com/jakobhellermann/bevy-contrib-inspector): Um projeto que possibilita a edição de forma visual de sua estrutura de recursos, mostrando-a em seu navegador.
 
-## Games
+### Ajudantes (Helpers)
 
-* [bevy_nbody](https://github.com/thallada/bevy-nbody): An N-body simulation in Rust
-* [flock-rs](https://github.com/JohnPeel/flock-rs): An example of steering and flocking behaviors
-* [bevy_pong](https://github.com/SuperiorJT/bevy_pong): It's Pong! Based on the "breakout" bevy example
-* [bevy-tetris](https://github.com/8bit-pudding/bevy-tetris): It's Tetris!
-* [snake_bevy](https://github.com/mtKeller/snake_bevy): It's Snake!
-* [i_sjon_kan_ingen_hora_dig_skrika](https://gitlab.com/TheZoq2/i_sjon_kan_ingen_hora_dig_skrika): Swedish rowing boat pirate simulator 2020
-* [labyrinth-game](https://github.com/insrcd/labrynth-game): A humble attempt at a roguelike / market-sim game
-* [bevy_sokoban](https://github.com/ropewalker/bevy_sokoban): Simple implementation of Sokoban
-* [per_spatium](https://gitlab.com/BottledByte/per-spatium): Scroll-down space shooter game
-* [bevy_rider](https://github.com/bonsairobo/bevy_rider): Line Rider, riding linearly, on segments of lines
-* [bevy_squares](https://github.com/TheNeikos/bevy_squares): A remake of the 'Threes' game, built with Bevy
-* [Kataster](https://github.com/Bobox214/Kataster): A simple single-screen spaceshooter with rapier2d
-* [Keep Inside](https://github.com/davidB/ld47_keep_inside): A solo pong on a circle (made for Ludum Dare 47)
-* [Keep Moving and Nobody Burns](https://github.com/mockersf/kmanb): A bomberman against time (made for Ludum Dare 47)
-* [SiO2](https://github.com/dmitriy-shmilo/sio2): A simple powder toy clone
-* [Robbo](https://github.com/mrk-its/bevy-robbo): Bevy port of great 8-bit Atari game, working native and in the browser
+* [bevy_contrib_colors](https://crates.io/crates/bevy_contrib_colors): Um projeto simples com a paleta de cores Tailwind.
+* [bevy_prototype_inline_assets](https://crates.io/crates/bevy_prototype_inline_assets): Um plugin para agrupar ativos (assets) em seu binário.
 
-## Apps
-* [bevy-calc](https://github.com/PravinKumar95/simple-calc): A simple calculator
+### Jogos (Games)
+
+* [bevy_nbody](https://github.com/thallada/bevy-nbody): Um projeto que simula n-corpos usando Bevy para renderização e [bigbang](https://docs.rs/bigbang) para os cálculos.
+* [flock-rs](https://github.com/JohnPeel/flock-rs): Um projeto que gera comportamentos de direção e bando.
+* [bevy_pong](https://github.com/SuperiorJT/bevy_pong): É o Pong! Criado com base no exemplo de "breakout" e colisão modificada.
+* [bevy-tetris](https://github.com/8bit-pudding/bevy-tetris): É o Tetris!
+* [snake_bevy](https://github.com/mtKeller/snake_bevy): É o Snake!
+* [i_sjon_kan_ingen_hora_dig_skrika](https://gitlab.com/TheZoq2/i_sjon_kan_ingen_hora_dig_skrika): Um projeto de simulador de barco pirata a remo sueco 2020.
+* [labyrinth-game](https://github.com/insrcd/labrynth-game): Um projeto de mercado simulado com roguelike.
+* [bevy_sokoban](https://github.com/ropewalker/bevy_sokoban): É o Sokoban!
+* [per_spatium](https://gitlab.com/BottledByte/per-spatium): Um projeto de jogo de tiro em uma nave espacial.
+* [bevy_rider](https://github.com/bonsairobo/bevy_rider): É o Line Rider!
+* [bevy_squares](https://github.com/TheNeikos/bevy_squares): Um projeto remake dos jogos Threes.
+* [Kataster](https://github.com/Bobox214/Kataster): Um projeto de jogo espacial de tela única.
+* [Keep Inside](https://github.com/davidB/ld47_keep_inside): Um projeto estilo Pong porém solo em um círculo (feito para Ludum Dare 47).
+* [Keep Moving and Nobody Burns](https://github.com/mockersf/kmanb): Um projeto de jogo estilo bomberman porém contra o tempo (feito para Ludum Dare 47).
+* [SiO2](https://github.com/dmitriy-shmilo/sio2): Um projeto remake do jogo Powder Toy.
+* [Robbo](https://github.com/mrk-its/bevy-robbo): Um projeto do jogo Atari Robbo de 8 bits, sendo executado nativamente e no navegador.
+
+### Aplicativos (Apps)
+
+* [bevy-calc](https://github.com/PravinKumar95/simple-calc): Um projeto que cria uma calculadora simples.
